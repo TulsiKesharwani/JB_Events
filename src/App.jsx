@@ -6,21 +6,21 @@ const events = [
     number: "01",
     title: "A long-table evening",
     category: "Intimate dinner celebration",
-    image: "public/images/event1 - Copy.jpg",
+    image: "/images/event1 - Copy.jpg",
     description: "Thoughtful details, beautiful tablescapes, and a reason to gather."
   },
   {
     number: "02",
     title: "The garden gathering",
     category: "Outdoor celebrations",
-    image: "public/images/event2.jpg",
+    image: "/images/event2.jpg",
     description: "A relaxed garden setting filled with flowers, candlelight, and warmth."
   },
   {
     number: "03",
     title: "A moment to remember",
     category: "Weddings & receptions",
-    image: "public/images/event3.jpg",
+    image: "/images/event3.jpg",
     description: "Personal celebrations designed around the people who matter most."
   }
 ];
@@ -60,8 +60,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="wordmark" href="#home" onClick={closeMenu} aria-label="Gatherkind home">
-        {/* <span className="wordmark-mark">✳</span> */}
-        <img src="public/images/jb_logo.jpeg" alt="" />
+        <img src="/images/jb_logo.jpeg" alt="" />
         JB Events
       </a>
       <button className="menu-toggle" aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>
